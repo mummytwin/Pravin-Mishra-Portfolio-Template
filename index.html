@@ -536,6 +536,16 @@
     Pravin Mishra Portfolio v1.0 — Deployed on 15 Apr 2026 — By HOPE ODU
   </p>
 </footer>
+    </div>
+  <script>
+  const months = ["Jan","Feb","Mar","Apr","May","Jun",
+                  "Jul","Aug","Sep","Oct","Nov","Dec"];
+  const d = new Date();
+  const formatted = d.getDate().toString().padStart(2,'0') + 
+                    ' ' + months[d.getMonth()] + 
+                    ' ' + d.getFullYear();
+  document.getElementById('deployDate').textContent = formatted;
+</script>
 
 </body>
 </html>
