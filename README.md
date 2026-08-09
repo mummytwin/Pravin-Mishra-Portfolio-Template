@@ -40,3 +40,15 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+## Footer
+
+The footer displays the portfolio version, deployment date, and author.
+
+The deploy date is generated dynamically using JavaScript:
+
+```javascript
+const d = new Date();
+document.getElementById('deployDate').textContent = 
+  d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+``
